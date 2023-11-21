@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Photo Gallery</title>
+    <link href="../../css/global.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p>Instagram</p>
+        <a href="/"> Back to Home</a>
+      </header>
+
+      <section class="loading-screen">
+        <div class="loader-msg">
+          <div class="spinner"></div>
+          <p>Loading Gallery</p>
+        </div>
+      </section>
+
+      <section class="landing-ui">
+        <h1>Image Gallery</h1>
+      </section>
+
+      <section class="gallery"></section>
+
+      <section class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <p class="instruction">
+          Press Arrow keys to navigate and Press ESC to close.
+        </p>
+        <div class="model-content">
+          <div class="img-details">
+            <img class="modal-image" />
+          </div>
+
+          <span
+            class="modal-prev"
+            title="Previous"
+            onclick="changeImage('prev')"
+            >&#10094;</span
+          >
+          <span class="modal-next" title="Next" onclick="changeImage('next')"
+            >&#10095;</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
