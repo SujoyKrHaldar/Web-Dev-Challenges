@@ -1,7 +1,30 @@
 main {
-  padding: 8rem 5rem;
+  padding: 3rem 5rem;
   width: 100%;
   height: 100%;
+}
+
+header {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  color: white;
+  z-index: 5;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-family: Tropical Country;
+}
+
+header a {
+  color: rgb(118, 118, 118);
+  transition: 0.5s ease;
+}
+header a:hover {
+  color: white;
 }
 
 .background {
@@ -51,8 +74,7 @@ h1 {
   overflow: hidden;
   width: 100%;
   height: 200px;
-  background-color: black;
-  /* border: 2px solid black; */
+  background-color: #171717;
 }
 
 .card .thumbnail img {
